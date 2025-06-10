@@ -1,5 +1,5 @@
 pipeline{
-agent any
+   agent any
 tools{
 maven 'maven'
 }
@@ -11,8 +11,8 @@ sh 'mvn clean'
 }
 stage("compile"){
 steps{
-sh 'mvn compile'
-}
+  sh 'mvn compile'
+  }
 }
 stage("test"){
 steps{
